@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import MyComponent from "../src/component/MyComponent";
+// import MyComponent from "../src/component/MyComponent";
+import MyComponent2 from "../src/component/MyComponent2";
 function App() {
   //JSX = html + js
 
@@ -10,7 +11,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <MyComponent />
+        {/* <MyComponent /> */}
+        <MyComponent2 />
         </p>
         <a
           className="App-link"
