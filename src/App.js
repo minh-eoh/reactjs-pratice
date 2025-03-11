@@ -1,26 +1,46 @@
 import logo from "./logo.svg";
 import "./App.css";
-// import MyComponent from "../src/component/MyComponent";
-import MyComponent2 from "../src/component/MyComponent2";
-function App() {
+import MyComponent from "../src/component/MyComponent";
+// import Nav from "./component/Nav";
+import { useState, useEffect, use } from "react";
+// import MyComponent2 from "../src/component/MyComponent2";
+function App() { 
   //JSX = html + js
+  const [aa, setaa] = useState("Minh");
+    let myname = "Minh";
+    let number = 2025;
+    let obj = { name: "Minh", channel: "EOH" };
+    let link = 'https://e-ra.io/index.html'
 
-  //template
+    console.log('1111111')
+    useEffect(() => {
+      console.log('22222222')
+      console.log("run useEffect");
+    }, []);
+
+  //template  
   return (
     <div className="App">
+    {      console.log('333333333')
+    }
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        {/* <MyComponent /> */}
-        <MyComponent2 />
-        </p>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <h1>hello world with React and {myname} !</h1>
+        <p style={{ color: "yellow" }}>{JSON.stringify(obj)}</p>
+        
+          {number} {obj.name} {obj.channel} <a href={link}>Click
+          <a href={link} target="_blank" ></a>Visit my channel</a>
+        <MyComponent />
+        {/* <MyComponent2 /> */}
+        {/* <Nav/> */}
+        
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/watch?v=8JkHV2GZL0M"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          dkfjghkdfjf;lkdafj;lads
         </a>
       </header>
     </div>
