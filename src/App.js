@@ -11,16 +11,16 @@ function App() {
     let number = 2025;
     let obj = { name: "Minh", channel: "EOH" };
     let link = 'https://e-ra.io/index.html'
-    console.log('1111')
+    console.log('11')
     useEffect(() => {
-      console.log('2222')
+      console.log('22')
       console.log("run useEffect");
     }, []);
 
   //template  
   return (
     <div className="App">
-    {      console.log('3333')
+    {      console.log('33')
     }
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
