@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import MyComponent from "../src/component/MyComponent";
-// import Nav from "./component/Nav";
+// import MyComponent from "../src/component/MyComponent";
+import Nav from "./component/Nav";
 import { useState, useEffect, use } from "react";
 // import MyComponent2 from "../src/component/MyComponent2";
 function App() { 
@@ -11,7 +11,6 @@ function App() {
     let number = 2025;
     let obj = { name: "Minh", channel: "EOH" };
     let link = 'https://e-ra.io/index.html'
-
     console.log('1111111')
     useEffect(() => {
       console.log('22222222')
@@ -30,9 +29,9 @@ function App() {
         
           {number} {obj.name} {obj.channel} <a href={link}>Click
           <a href={link} target="_blank" ></a>Visit my channel</a>
-        <MyComponent />
+        {/* <MyComponent /> */}
         {/* <MyComponent2 /> */}
-        {/* <Nav/> */}
+        <Nav/>
         
         <a
           className="App-link"
